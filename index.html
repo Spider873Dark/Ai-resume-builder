@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Resume Builder</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-4">
+    <div class="max-w-2xl mx-auto bg-white p-6 rounded shadow">
+        <h1 class="text-2xl font-bold mb-4">AI Resume Builder</h1>
+        <form id="resume-form" class="space-y-4">
+            <input class="w-full border p-2" type="text" id="name" placeholder="Your Name" required>
+            <input class="w-full border p-2" type="text" id="title" placeholder="Job Title" required>
+            <textarea class="w-full border p-2" id="experience" placeholder="Your Experience" rows="5" required></textarea>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded" type="submit">Generate Resume</button>
+        </form>
+        <div id="output" class="mt-6"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>
